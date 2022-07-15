@@ -4,5 +4,5 @@ using LiteDB;
 
 public interface IDatabaseContext
 {
-    LiteDatabase Database { get; }
+    public LiteDatabase Database { get; }
 }

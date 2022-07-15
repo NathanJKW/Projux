@@ -1,1 +1,4 @@
 # Git ignore file duh!
+.vscode
+**/obj
+**/bin

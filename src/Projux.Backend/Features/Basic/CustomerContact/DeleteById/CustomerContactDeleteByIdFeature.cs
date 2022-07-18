@@ -1,13 +1,12 @@
-namespace Projux.Backend.Features.Basic.CustomerContact.DeleteById;
-
 using LiteDB;
-using Projux.Backend.Brokers.Database;
-using Projux.Backend.Brokers.Database.CustomerContact;
+using Projux.Dal.CustomerContact;
+
+namespace Projux.Backend.Features.Basic.CustomerContact.DeleteById;
 
 public class CustomerContactDeleteByIdFeature : ICustomerContactDeleteByIdFeature
 {
-    private readonly ICustomerContactDatabaseBroker _customerContactDatabaseBroker;
-    public CustomerContactDeleteByIdFeature(ICustomerContactDatabaseBroker customerContactDatabaseBroker)
+    private readonly ICustomerContactBroker _customerContactDatabaseBroker;
+    public CustomerContactDeleteByIdFeature(ICustomerContactBroker customerContactDatabaseBroker)
     {
         _customerContactDatabaseBroker = customerContactDatabaseBroker;
     }

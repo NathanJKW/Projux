@@ -1,9 +1,6 @@
-using Projux.Backend.Brokers.Database;
-using Projux.Backend.Brokers.Database.CustomerContact;
-using Projux.Backend.Database;
+using Projux.Dal;
 
 var builder = WebApplication.CreateBuilder(args);
-var liteDbOptions = new DatabaseOptions { DatabaseLocation = @"Projux.db" };
 
 // Add services to the container.
 
@@ -12,10 +9,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddSingleton(liteDbOptions);
-builder.Services.AddSingleton<IDatabaseContext, DatabaseContext>();
-builder.Services.AddSingleton<ICustomerContactDatabaseBroker, CustomerContactDatabaseBroker>();
-//builder.Services.AddTransient<ICustomerContactService, CustomerContactService>();
+builder.Services.AddProjuxDalLayer(@"Projux.db");
 
 var app = builder.Build();
 

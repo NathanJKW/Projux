@@ -1,8 +1,7 @@
 using LiteDB;
-using Projux.Dal.Database;
 using Projux.Dal.Database.Entities;
 
-namespace Projux.Backend.Database;
+namespace Projux.Dal.Database;
 
 public class DatabaseContext : IDatabaseContext
 {

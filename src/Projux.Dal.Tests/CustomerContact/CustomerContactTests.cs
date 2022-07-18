@@ -1,5 +1,6 @@
 using LiteDB;
 using Projux.Dal.CustomerContact;
+using Projux.Dal.Database.Entities;
 using Projux.Dal.Tests.Fixtures.Collections.DatabaseContext;
 
 namespace Projux.Dal.Tests.CustomerContact;
@@ -16,10 +17,10 @@ public class CustomerContactTests
     }
 
     [Fact]
-    public void FindById_UsingRandomId_ShouldReturnNull()
+    public void ShouldReturnIQueryable()
     {
         var randomId = ObjectId.NewObjectId();
-        var result = _customerContactService.Select().Where(x => x.Id == randomId).FirstOrDefault();
-        Assert.Null(result);
+        var result = _customerContactService.Select();
+        Assert.IsType<EnumerableQuery<CustomerContactEntity>>(result);
     }
 }

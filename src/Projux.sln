@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projux.Dal", "Projux.Dal\Projux.Dal.csproj", "{77D88DD0-4551-46BC-A6A9-D8DE9144EBB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projux.Dal.Tests", "Projux.Dal.Tests\Projux.Dal.Tests.csproj", "{65C86698-76BE-4134-9D2F-79230E9C56DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projux.Backend", "Projux.Backend\Projux.Backend.csproj", "{B26B6008-9F4B-4F26-89B0-5B80826BAB12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projux.Backend.Tests", "Projux.Backend.Tests\Projux.Backend.Tests.csproj", "{90F56B4F-E36F-4397-A2FA-D723FF469EA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projux.Frontend.Wpf", "Projux.Frontend.Wpf\Projux.Frontend.Wpf.csproj", "{F33C7930-C9F5-4573-956F-76EED63FD312}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projux.Frontend.Wpf.Tests", "Projux.Frontend.Wpf.Tests\Projux.Frontend.Wpf.Tests.csproj", "{116EFD73-BCBC-4EFE-B2A7-5E63A9FD0B30}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77D88DD0-4551-46BC-A6A9-D8DE9144EBB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77D88DD0-4551-46BC-A6A9-D8DE9144EBB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77D88DD0-4551-46BC-A6A9-D8DE9144EBB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77D88DD0-4551-46BC-A6A9-D8DE9144EBB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65C86698-76BE-4134-9D2F-79230E9C56DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65C86698-76BE-4134-9D2F-79230E9C56DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65C86698-76BE-4134-9D2F-79230E9C56DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65C86698-76BE-4134-9D2F-79230E9C56DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B26B6008-9F4B-4F26-89B0-5B80826BAB12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B26B6008-9F4B-4F26-89B0-5B80826BAB12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B26B6008-9F4B-4F26-89B0-5B80826BAB12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B26B6008-9F4B-4F26-89B0-5B80826BAB12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90F56B4F-E36F-4397-A2FA-D723FF469EA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90F56B4F-E36F-4397-A2FA-D723FF469EA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90F56B4F-E36F-4397-A2FA-D723FF469EA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90F56B4F-E36F-4397-A2FA-D723FF469EA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F33C7930-C9F5-4573-956F-76EED63FD312}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F33C7930-C9F5-4573-956F-76EED63FD312}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F33C7930-C9F5-4573-956F-76EED63FD312}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F33C7930-C9F5-4573-956F-76EED63FD312}.Release|Any CPU.Build.0 = Release|Any CPU
+		{116EFD73-BCBC-4EFE-B2A7-5E63A9FD0B30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{116EFD73-BCBC-4EFE-B2A7-5E63A9FD0B30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{116EFD73-BCBC-4EFE-B2A7-5E63A9FD0B30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{116EFD73-BCBC-4EFE-B2A7-5E63A9FD0B30}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,4 +1,5 @@
 using Projux.Backend.Brokers.Database;
+using Projux.Backend.Brokers.Database.CustomerContact;
 using Projux.Backend.Database;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,7 +14,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddSingleton(liteDbOptions);
 builder.Services.AddSingleton<IDatabaseContext, DatabaseContext>();
-builder.Services.AddSingleton<IDatabaseBroker, DatabaseBroker>();
+builder.Services.AddSingleton<ICustomerContactDatabaseBroker, CustomerContactDatabaseBroker>();
 //builder.Services.AddTransient<ICustomerContactService, CustomerContactService>();
 
 var app = builder.Build();
